@@ -7,12 +7,10 @@
  */
 
 import React, {Component} from 'react';
-import {
-  Text,
-} from 'react-native';
 
+import FirstIntroScreen from './src/components/Onboarding/FirstIntroScreen';
 export default class APP extends Component {
   render() {
-    return <Text>Cabs Revamped</Text>
+    return <FirstIntroScreen />;
   }
 }
