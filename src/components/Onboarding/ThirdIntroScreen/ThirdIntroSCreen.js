@@ -6,17 +6,13 @@ import styles from './styles';
 
 import {ProceedButton} from '../../assets/Buttons/Buttons';
 
-export default class SecondIntroScreen extends Component {
+export default class ThirdIntroScreen extends Component {
   state = {buttonColor: 'black', textColor: 'white'};
 
   componentDidMount() {
     this.setState(state => {
       return {...state, buttonColor: 'black', textColor: 'white'};
     });
-  }
-
-  handlePress() {
-    Actions.ThirdIntroScreen();
   }
 
   render() {
@@ -28,21 +24,17 @@ export default class SecondIntroScreen extends Component {
         </View>
         <Image
           style={styles.Image}
-          source={require('../../../assets/images/introScreen2.png')}
+          source={require('../../../assets/images/introScreen3.png')}
         />
         <View style={styles.bottom}>
-          <Text style={styles.footer}>Choose your location</Text>
+          <Text style={styles.footer}>Pick your Ride</Text>
           <Text style={styles.footerDescription}>
-            First choose a pickup location followed by the drop-off location.
-            This will alert our drivers and one of them will be on their way to
-            get you
+            Select the type of ride you would like to complete the journey in.
+            You will be able to choose from cars that are available based on
+            your location
           </Text>
         </View>
-        <ProceedButton
-          buttonColor={buttonColor}
-          textColor={textColor}
-          onPress={() => this.handlePress()}
-        />
+        <ProceedButton buttonColor={buttonColor} textColor={textColor} />
       </View>
     );
   }
