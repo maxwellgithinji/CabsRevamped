@@ -1,33 +1,6 @@
-import React, {Component} from 'react';
+import {StyleSheet} from 'react-native';
 
-import {Text, ImageBackground, StyleSheet, View} from 'react-native';
-
-export default class FirstIntroScreen extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <ImageBackground
-          style={styles.backgroundImage}
-          source={require('../../assets/images/introScreen1.png')}>
-          <View style={styles.logoContainer}>
-            <Text style={styles.logoDescription}>WELCOME TO</Text>
-            <Text style={styles.logoText}>Get There</Text>
-          </View>
-          <View style={styles.bottom}>
-            <Text style={styles.footer}>Book a cab in 3</Text>
-            <Text style={styles.footerDescription}>Simple steps</Text>
-          </View>
-          <View style={styles.myButton}>
-            <Text style={styles.myButtonIconText}>›››</Text>
-            <Text style={styles.myButtonText}>Proceed</Text>
-          </View>
-        </ImageBackground>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
     fontFamily: '-apple-system, BlinkMacSystemFont Segoe UI',
