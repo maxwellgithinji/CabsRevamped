@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
-
 import {Text, ImageBackground, View} from 'react-native';
+import {Actions} from 'react-native-router-flux';
 
 import styles from './styles';
 
 import {ProceedButton} from '../../assets/Buttons/Buttons';
 
 export default class FirstIntroScreen extends Component {
+  state = {buttonColor: 'white', textColor: 'black'};
+
+  componentDidUpdate() {
+    this.setState(state => {
+      return {...state, buttonColor: 'white', textColor: 'black'};
+    });
+  }
+
+  handlePress() {
+    Actions.SecondIntroScreen();
+  }
   render() {
+    const {buttonColor, textColor} = this.state;
     return (
       <View style={styles.container}>
         <ImageBackground
@@ -21,7 +33,11 @@ export default class FirstIntroScreen extends Component {
             <Text style={styles.footer}>Book a cab in 3</Text>
             <Text style={styles.footerDescription}>Simple steps</Text>
           </View>
-          <ProceedButton buttonColor="white" textColor="black" />
+          <ProceedButton
+            buttonColor={buttonColor}
+            textColor={textColor}
+            onPress={() => this.handlePress()}
+          />
         </ImageBackground>
       </View>
     );

@@ -2,45 +2,45 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     fontFamily: '-apple-system, BlinkMacSystemFont Segoe UI',
     textDecorationColor: 'white',
-    backgroundColor: 'black',
+    backgroundColor: 'white',
+    alignItems: 'center',
   },
-  backgroundImage: {
-    flex: 1,
+  Image: {
+    flex: 3,
     width: '100%',
-    height: '100%',
+    height: '80%',
     alignItems: 'center',
   },
   logoContainer: {
     alignItems: 'center',
-    marginTop: 36,
+    marginTop: 0,
+    width: '100%',
+    paddingBottom: 20,
   },
   logoText: {
     fontSize: 55,
     fontWeight: 'bold',
-    color: 'white',
-  },
-  logoDescription: {
-    fontSize: 16,
-    fontWeight: '900',
-    color: 'white',
   },
   bottom: {
     flex: 1,
     justifyContent: 'flex-end',
     marginBottom: 36,
     alignItems: 'center',
+    paddingLeft: 70,
+    paddingRight: 70,
   },
   footer: {
-    fontSize: 40,
-    fontWeight: '900',
-    color: 'white',
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingBottom: 5,
   },
   footerDescription: {
-    fontSize: 40,
-    fontWeight: '900',
-    color: 'white',
+    fontSize: 14,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    lineHeight: 20,
   },
 });
