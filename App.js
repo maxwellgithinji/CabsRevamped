@@ -7,10 +7,28 @@
  */
 
 import React, {Component} from 'react';
+import {Scene, Stack, Router} from 'react-native-router-flux';
 
-import FirstIntroScreen from './src/components/Onboarding/FirstIntroScreen';
+import FirstIntroScreen from './src/components/Onboarding/FirstInrtoScreen/FirstIntroScreen';
+import SecondIntroScreen from './src/components/Onboarding/SecondIntroScreen/SecondIntroScreen';
+
 export default class APP extends Component {
   render() {
-    return <FirstIntroScreen />;
+    return (
+      <Router>
+        <Stack>
+          <Scene
+            key="FirstIntroScreen"
+            component={FirstIntroScreen}
+            hideNavBar={true}
+          />
+          <Scene
+            key="SecondIntroScreen"
+            component={SecondIntroScreen}
+            hideNavBar={true}
+          />
+        </Stack>
+      </Router>
+    );
   }
 }
