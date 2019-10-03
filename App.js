@@ -12,6 +12,7 @@ import {Scene, Stack, Router} from 'react-native-router-flux';
 import FirstIntroScreen from './src/components/Onboarding/FirstInrtoScreen/FirstIntroScreen';
 import SecondIntroScreen from './src/components/Onboarding/SecondIntroScreen/SecondIntroScreen';
 import ThirdIntroScreen from './src/components/Onboarding/ThirdIntroScreen/ThirdIntroSCreen';
+import FourthIntroScreen from './src/components/Onboarding/FourthIntroScreeen/FourthIntroScreen';
 
 export default class APP extends Component {
   render() {
@@ -31,6 +32,11 @@ export default class APP extends Component {
           <Scene
             key="ThirdIntroScreen"
             component={ThirdIntroScreen}
+            hideNavBar={true}
+          />
+          <Scene
+            key="FourthIntroScreen"
+            component={FourthIntroScreen}
             hideNavBar={true}
           />
         </Stack>
