@@ -3,6 +3,7 @@ import {Text, ImageBackground, View} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
 import styles from './styles';
+import images from '../../../../assets/images/';
 
 import {ProceedButton} from '../../assets/Buttons/Buttons';
 
@@ -24,7 +25,7 @@ export default class FirstIntroScreen extends Component {
       <View style={styles.container}>
         <ImageBackground
           style={styles.backgroundImage}
-          source={require('../../../assets/images/introScreen1.png')}>
+          source={images.introScreen1}>
           <View style={styles.logoContainer}>
             <Text style={styles.logoDescription}>WELCOME TO</Text>
             <Text style={styles.logoText}>Get There</Text>
@@ -37,6 +38,7 @@ export default class FirstIntroScreen extends Component {
             buttonColor={buttonColor}
             textColor={textColor}
             onPress={() => this.handlePress()}
+            buttonTitle="Proceed"
           />
         </ImageBackground>
       </View>
