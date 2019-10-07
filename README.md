@@ -18,3 +18,4 @@ If the metro builder gives a gradle error for the android app, upen the android 
 1. https://www.vecteezy.com/vector-art/529013-taxi-cab-vector-eps
 2. https://www.uplabs.com/posts/uber-app-redesign-concept
 3. https://undraw.co/illustrations
+4. https://www.zamzar.com/convert/eps-to-svg/
