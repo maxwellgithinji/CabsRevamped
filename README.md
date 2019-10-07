@@ -13,3 +13,8 @@
 ### Note
 
 If the metro builder gives a gradle error for the android app, upen the android folder in android studio and run install or rerun gradle from there
+
+## Credits
+1. https://www.vecteezy.com/vector-art/529013-taxi-cab-vector-eps
+2. https://www.uplabs.com/posts/uber-app-redesign-concept
+3. https://undraw.co/illustrations
