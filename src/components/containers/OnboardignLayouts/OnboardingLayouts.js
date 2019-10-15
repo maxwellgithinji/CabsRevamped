@@ -3,7 +3,7 @@ import {Text, View, Image} from 'react-native';
 
 import styles from './styles';
 
-import {ProceedButton} from '../../assets/Buttons/Buttons';
+import {ProceedButton} from '../Buttons/Buttons';
 
 export default class OnboardingLayout extends Component {
   state = {

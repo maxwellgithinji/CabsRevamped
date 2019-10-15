@@ -5,7 +5,7 @@ import {Actions} from 'react-native-router-flux';
 import styles from './styles';
 import images from '../../../../assets/images/';
 
-import {ProceedButton} from '../../assets/Buttons/Buttons';
+import {ProceedButton} from '../../containers/Buttons/Buttons';
 
 export default class FirstIntroScreen extends Component {
   state = {buttonColor: 'white', textColor: 'black'};

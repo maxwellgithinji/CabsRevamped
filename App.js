@@ -13,13 +13,14 @@ import FirstIntroScreen from './src/components/Onboarding/FirstInrtoScreen/First
 import SecondIntroScreen from './src/components/Onboarding/SecondIntroScreen/SecondIntroScreen';
 import ThirdIntroScreen from './src/components/Onboarding/ThirdIntroScreen/ThirdIntroSCreen';
 import FourthIntroScreen from './src/components/Onboarding/FourthIntroScreeen/FourthIntroScreen';
+import MapView from './src/components/Maps/Maps';
 
 export default class APP extends Component {
   render() {
     return (
       <Router>
         <Stack>
-          <Scene
+          {/* <Scene
             key="FirstIntroScreen"
             component={FirstIntroScreen}
             hideNavBar={true}
@@ -37,6 +38,11 @@ export default class APP extends Component {
           <Scene
             key="FourthIntroScreen"
             component={FourthIntroScreen}
+            hideNavBar={true}
+          /> */}
+          <Scene
+            key="FourthIntroScreen"
+            component={MapView}
             hideNavBar={true}
           />
         </Stack>
