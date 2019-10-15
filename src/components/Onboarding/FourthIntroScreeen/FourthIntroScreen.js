@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import images from '../../../../assets/images/';
 
-import OnboardingLayout from '../../assets/OnboardignLayouts/OnboardingLayouts';
+import OnboardingLayout from '../../containers/OnboardignLayouts/OnboardingLayouts';
 
 export default class FourthIntroScreen extends Component {
   render() {
