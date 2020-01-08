@@ -8,7 +8,8 @@
 
 - follow the instructions on how to setup a react native environment [Here](http://facebook.github.io/react-native/docs/getting-started). user react-native-cli
 - run `yarn install to install` the packages
-- run `react-native-cli android` to start the app and make sure the AVD is running or use your phone
+- run `react-native start` to start Metro Bundler
+- run `react-native android` to start the app and make sure the AVD is running or use your phone
 
 ### Note
 
