@@ -13,7 +13,7 @@
 
 ### Note
 
-If the metro builder gives a gradle error for the android app, open the android folder in android studio and run gradle from there
+If the metro bundler gives a gradle error for the android app, open the android folder in android studio and run gradle from there
 
 ## Credits
 1. https://www.vecteezy.com/vector-art/529013-taxi-cab-vector-eps
